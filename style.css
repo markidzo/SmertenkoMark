@@ -16,6 +16,11 @@ header{
     margin-top: 40px;
 }
 
+header a{
+    color: white;
+    text-decoration: none;
+}
+
 ul{
     display: flex;
     flex-direction: row;
@@ -68,19 +73,20 @@ li:hover{
     align-items: center;
     flex-direction: column;
     margin-top: 200px;
+}   
+
+
+.click{
+    display: none;
 }
 
-a{
-    text-decoration: none;
 
-    color: white;
-}
-
-.myPr img{
+.projects .site{
     width: 600px;
     border-radius: 20px;
     border: 1px solid white;
     transition: 0.4s;
+    border-bottom-right-radius: 0px;
 }
 
 .myPr h1{
@@ -90,12 +96,27 @@ a{
 
 .projects h2{
     font-size: 30px;
-    margin: 10px;
+    margin: 20px;
 }
 
 .projects p{
     font-size: 20px;
     margin: 10px;
+}
+
+.projects .clon{
+    color: white;
+    text-decoration: none;
+    display: block;
+}
+
+.projects .yarlik{
+    width: 25px;
+    border-radius: 2px;
+    background-color: gray;
+    border: none;
+    height: 25px;
+    margin-top: 250px;
 }
 
 .about-me{
@@ -104,7 +125,7 @@ a{
 }
 
 .text{
-    width: 200px;
+    width: 250px;
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -145,7 +166,6 @@ a{
     width: 250px;
     margin: 10px;
     font-size: 21px;
-    margin-left: 50px;
     background-color: rgb(29, 29, 29);
     display: flex;
     justify-content: center;
@@ -179,6 +199,7 @@ a{
 }
 
 .texting h1{
+    margin-top: 20px;
     font-size: 40px;
 }
 
@@ -188,8 +209,8 @@ a{
 
 footer{
     width: 100%;
-    height: 150px;
-    background-color: rgb(141, 172, 172);
+    height: 250px;
+    background-color: rgb(122, 122, 122);
     margin-top: 100px;
     color: black;
     font-size: 24px;
@@ -198,20 +219,61 @@ footer{
     align-items: center;
 }
 
-footer a{
-    color: black;
+.links{
+    width: 350px;
+    height: 200px;
+    background-color: rgb(99, 99, 99);
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+    flex-direction: column;
 }
 
-footer p{
-    background-color: rgb(141, 172, 172);
+.links h3{
+    color: white;
 }
 
-footer img{
-    width: 30px;
+.links p{
+    font-size: 15px;
+    color: rgb(255, 255, 255);
 }
+
+.links img{
+    width: 50px;
+}
+
+.telegram{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items:end;
+    border-bottom: 1px solid white;
+    margin-top: 15px;
+}
+
+
+.github{
+    margin-top: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items:end;
+    border-bottom: 1px solid white;
+}
+
+.links:hover{
+    width: 360px;
+    height: 210px;
+    transition: 0.5s;
+    background-color: rgb(91, 91, 91);
+}
+
 
 
 @media(max-width:1024px){
+
     .about-me{
         flex-direction: column;
     }
@@ -223,13 +285,27 @@ footer img{
         flex-direction: column;
     }
 
+    .click{
+        display: flex;
+    }
+    .projects .clon{
+        color: white;
+        text-decoration: none;
+        display: flex;
+    }
+
+    .yarlik{
+        display: none;
+    }
+
+    
+
     .text{
-        width: 200px;
+        width: 350px;
         display: flex;
         flex-direction: column;
         text-align: center;
         background-color: rgb(29, 29, 29);
-        margin-left: 200px;
         border-radius: 20px;
         border: 1px solid white;
         margin-top: 20px;
@@ -241,17 +317,26 @@ footer img{
         justify-content: center;
         align-items: center;
     }
+    .sk{
+        width: 300px;
+    }
 }
 
 @media(max-width:768px){
-
     li:hover{
         border-bottom: 3px solid transparent;
         transition: 0.4s;
     }
 
+
+    .links:hover{
+        width: 350px;
+        height: 200px;
+        transition: 0.5s;
+        background-color: rgb(99, 99, 99);
+    }
     
-    .myPr img{
+    .myPr .site{
         width: 400px;
         border-radius: 20px;
         border: 1px solid white;
@@ -264,7 +349,6 @@ footer img{
         flex-direction: column;
         text-align: center;
         background-color: rgb(29, 29, 29);
-        margin-left: 100px;
         border-radius: 20px;
         border: 1px solid white;
         margin-top: 20px;
@@ -280,6 +364,10 @@ footer img{
 }
 
 @media(max-width:540px){
+
+    #contLink{
+        display: none;
+    }
     
     .myPr img{
         width: 300px;
@@ -289,12 +377,11 @@ footer img{
     }
 
     .text{
-        width: 150px;
+        width: 200px;
         display: flex;
         flex-direction: column;
         text-align: center;
         background-color: rgb(29, 29, 29);
-        margin-left: 75px;
         border-radius: 20px;
         border: 1px solid white;
     }
@@ -314,4 +401,21 @@ footer img{
     li{
         margin-left: 30px;
     }
+}
+
+@media(max-width:400px){
+.projects .site{
+    width:300px;
+}
+.text{
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: rgb(29, 29, 29);
+    border-radius: 20px;
+    border: 1px solid white;
+    margin-left: 50px;
+}
+
 }

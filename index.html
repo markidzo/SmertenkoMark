@@ -13,9 +13,10 @@
     <header>
         <nav>
             <ul>
-                <li><a href="#abv">About me</a></li>
-                <li><a href="#proj">Projects</a></li>
-                <li><a href="#skl">Skills</a></li>
+                <li><a href="#abv" id="aboutMeLink">Про мене</a></li>
+                <li><a href="#proj" id="projectLink">Проєкти</a></li>
+                <li><a href="#skl" id="skillLink">Скіли</a></li>
+                <li><a href="#cont" id="contLink">Контакти</a></li>
             </ul>
         </nav>
     </header>
@@ -25,70 +26,78 @@
 
        <div class="welcome">
             <h1>WELCOME!</h1>
-            <p>That's my portfolio.</p>
+            <p>Це моє портфоліо</p>
        </div>
     </section>
 
     <section class="myPr">
-        <h1 id="proj">Projects</h1>
+        <h1 id="proj">Проєкти</h1>
         <div class="projects">
             <div class="about-me">
-                <a href="https://markidzo.github.io/About-me/">
-                    <img src="img/Знімок екрана 2025-01-20 201249.png" alt="" >
-                    <h5>Click on the photo</h5>
-                </a>
+                    <img src="img/Знімок екрана 2025-01-20 201249.png" alt="" class="site">
+                    <a href="https://markidzo.github.io/About-me/" class="clon" target="_blank">
+                        <p class="click">Натисніть на фото</p>
+                    </a>
+                    <a href="https://markidzo.github.io/About-me/" target="_blank">
+                        <img src="img/yarlik.png" alt="" class="yarlik">
+                    </a>
 
                     <div class="text">
                     <h2>My Blog</h2>
-                    <p>This site was one of my very first projects, it was created to test my knowledge at the web development school.</p>
+                    <p>Цей сайт був одним із найперших моїх проектів, він створювався для перевірки моїх знань у школі веб-розробки.</p>
                     </div>
                 
             </div>
 
             <div class="notes">
-                <a href="https://markidzo.github.io/notes/">
-                    <img src="img/Знімок екрана 2025-01-20 201629.png" alt="">
-                    <h5>Click on the photo</h5>
-                </a>
+                    <img src="img/Знімок екрана 2025-01-20 201629.png" alt="" class="site">
+                    <a href="https://markidzo.github.io/notes/" class="clon" target="_blank">
+                        <p class="click">Натисніть на фото</p>
+                    </a>
+                    <a href="https://markidzo.github.io/notes/" target="_blank">
+                        <img src="img/yarlik.png" alt="" class="yarlik">
+                    </a>
 
                     <div class="text">
                     <h2>Notes</h2>
-                    <p>A note-taking site where you can write, delete, and save your notes even when refreshing the page</p>
+                    <p>Сайт для створення нотаток, де ви можете писати, видаляти та зберігати свої нотатки навіть під час оновлення сторінки</p>
                     </div>
                 
             </div>
 
             <div class="d-shop">
-                <a href="https://markidzo.github.io/Order-3d/index.html">
-                    <img src="img/Знімок екрана 2025-01-20 201127.png" alt="">
-                    <h5>Click on the photo</h5>
-                </a>
+                    <img src="img/Знімок екрана 2025-01-20 201127.png" alt="" class="site" >
+                    <a href="https://markidzo.github.io/Order-3d/index.html" class="clon" target="_blank">
+                        <p class="click">Натисніть на фото</p>
+                    </a>
+                    <a href="https://markidzo.github.io/Order-3d/index.html" target="_blank">
+                        <img src="img/yarlik.png" alt="" class="yarlik">
+                    </a>
 
                     <div class="text">
                         <h2>Online Shop</h2>
-                    <p>I co-developed this site that sells 3D-printed models. You can buy one from the ones offered or create your own.</p>
+                    <p>Я був співрозробником цього сайту, який продає 3D-друковані моделі. Ви можете купити один із запропонованих або створити власний.</p>
                     </div>
                 
             </div>
         </div>
     </section>
-    <h1 class="sh" id="skl">Skills</h1>
+    <h1 class="sh" id="skl">Скіли</h1>
     <section class="skills">
         <div class="sk">
-            <p>I have been doing web development for over 3 years at a programming school. I work with HTML, CSS, and JavaScript. I can write frontend and backend. I can work with API.</p>
+            <p>Я займаюся веб-розробкою більше 3 років у школі програмування. Працюю з HTML, CSS та JavaScript. Я вмію писати інтерфейс і бекенд. Вмію працювати з API.</p>
         </div>
 
         <div class="sk">
-           <p> I also know how to work with Figma and Canva.</p>
+           <p>Я також знаю, як працювати з Figma та Canva.</p>
         </div>
 
         <div class="sk">
-            <p>I am currently taking a course in the Python programming language to delve deeper into backend development. In the future, I want to work in the field of AI development.</p>
+            <p>Зараз я проходжу курси з мови програмування Python, щоб глибше заглибитися в розробку бекенда. У майбутньому я хочу працювати у сфері розробки ШІ.</p>
         </div>
 
         <div class="sk">
-            <p>
-                I have the skills to upload a site to hosting and maintain the site while it is running.
+            <p>Маю навички завантажувати сайт на хостинг і підтримувати сайт під час його роботи.
             </p>
         </div>
     </section>
@@ -96,17 +105,27 @@
     <section class="about" id="abv">
         <img src="img/IMG_5505.jpg" alt="" class="WelcImg">
         <div class="texting">
-            <h1>About me</h1>
-            <p>My name is Mark, I am 15 years old, I live in Kyiv, I am engaged in web development, I want to gain experience in IT.</p>
+            <h1>Про мене</h1>
+            <p>Мене звати Марк, мені 15 років, я живу в Києві, займаюся веб-розробкою, хочу отримати досвід в IT.</p>
         </div>
     </section>
 
 
 
     <footer>
-        <p>My <a href="https://web.telegram.org/a/">Telegram</a><img src="img/icons8-телеграмма-app-50.png" alt=""> - @markidzo</p>
-    </footer>
+        <div class="links">
+            <h3 id="cont">Контакти</h3>
+            <div class="telegram">
+                <a href="https://web.telegram.org/a/" target="_blank"><img src="img/telegram.png" alt=""></a>
+                <p>@markidzo</p>
+            </div>
 
+            <div class="github">
+                <a href="https://github.com/markidzo" target="_blank"><img src="img/github.png" alt=""></a>
+                <p>@markidzo</p>
+            </div>    
+        </div>
+    </footer>
     <script src="script.js"></script>
     
 </body>
